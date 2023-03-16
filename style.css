@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+img, picture, video, svg, canvas{
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+  overflow-wrap: break-word;
+}
+
+:root{
+  --Very-dark-magenta: hsl(300, 43%, 22%);
+  --Soft-pink: hsl(333, 80%, 67%);
+  --Dark-grayish-magenta: hsl(303, 10%, 53%);
+  --Light-grayish-magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body{
+  font-size: 15px;
+  font-family: 'League Spartan', sans-serif;
+  line-height: 1.6;
+  padding: 5rem 2rem;
+  max-width: 970px;
+  margin: auto;
+}
+
+.card{
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.sub{
+  display: grid;
+}
+
+.grid_rating{
+  display: grid;
+  background-color: var(--Light-grayish-magenta);
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.title h2{
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--Very-dark-magenta);
+}
+
+.title p{
+  color: var(--Dark-grayish-magenta);
+  margin-block: 2rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.rating{
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--Very-dark-magenta);
+  text-align: center;
+}
+
+.flex_star{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.flex_star img{
+  object-fit: contain;
+}
+
+.flex{
+  display: flex;
+}
+
+.card_article{
+  background-color: var(--Very-dark-magenta);
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+.flex_card{
+  gap: 1rem;
+  align-items: center;
+}
+
+.flex_card img{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.flex_card h3{
+  color: var(--White);
+  font-weight: 700;
+}
+
+.flex_card p{
+  color: var(--Soft-pink);
+  font-weight: 500;
+}
+
+.card_text{
+  color: var(--White);
+  margin-block-start: 1rem;
+}
+
+article{
+  margin-top: 2rem;
+}
+article{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 1rem;
+  }
+
+@media(min-width: 940px){
+  .grid_rating{
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+  }
+  .sub{
+    grid-template-columns: auto auto;
+    gap: 5rem;
+    align-items: center;
+  }
+  .title h2, .title p{
+    text-align: left;
+  }
+  .sub1{
+    transform: translateX(-5rem);
+  }
+  .sub2{
+    transform: translateX(-2.5rem);
+  }
+  .sub3{
+    transform: translateX(0.5rem);
+  }
+  
+  .sec1{
+    transform: translateY(0.5rem);
+  }
+  .sec2{
+    transform: translateY(2.5rem);
+  }
+  .sec3{
+    transform: translateY(5rem);
+  }
+}
